@@ -891,9 +891,12 @@ checksum = "6245d59a3e82a7fc217c5828a6692dbc6dfb63a0c8c90495621f7b9d79704a0e"
 
 [[package]]
 name = "convert_case"
-version = "0.5.0"
+version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fb4a24b1aaf0fd0ce8b45161144d6f42cd91677fd5940fd431183eb023b3a2b8"
+checksum = "ec182b0ca2f35d8fc196cf3404988fd8b8c739a4d270ff118a398feb0cbec1ca"
+dependencies = [
+ "unicode-segmentation",
+]
 
 [[package]]
 name = "counted-array"
@@ -1494,7 +1497,7 @@ dependencies = [
  "compare",
  "const_fn_assert",
  "conv",
- "convert_case 0.5.0",
+ "convert_case 0.6.0",
  "counted-array",
  "counter",
  "cow-utils",
@@ -3266,7 +3269,7 @@ checksum = "e63899ad0da84ce718c14936262a41cee2c79c981fc0a0e7c7beb47d5a07e8c1"
 dependencies = [
  "num-integer",
  "num-traits",
- "rand 0.3.23",
+ "rand 0.4.6",
  "rustc-serialize",
 ]
 
